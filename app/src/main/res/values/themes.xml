@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.WorldCinemaJava" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/wc_background</item>
+        <item name="android:navigationBarColor">@color/wc_background</item>
+        <item name="android:statusBarColor">@color/wc_background</item>
+        <item name="android:colorAccent">@color/wc_primary</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+
+    <style name="TitleText">
+        <item name="android:textColor">@color/cyan_primary</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EditStyle">
+        <item name="android:background">@drawable/bg_edit_text</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray_hint</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+</resources>

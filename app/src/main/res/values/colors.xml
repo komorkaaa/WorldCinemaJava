@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wc_primary">#43DED0</color>
+    <color name="cyan_primary">#43DED0</color>
+    <color name="cyan">#43DED0</color>
+    <color name="wc_background">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_hint">#777777</color>
+    <color name="gray_edit_bg">#181818</color>
+</resources>
+
