@@ -1,6 +1,7 @@
 package com.example.worldcinemajava.ui.launch;
 
 import android.annotation.SuppressLint;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -13,21 +14,23 @@ import androidx.core.view.WindowInsetsCompat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import com.example.worldcinemajava.R;
 import com.example.worldcinemajava.ui.main.MainActivity;
+import com.example.worldcinemajava.ui.signin.SignInActivity;
 
 public class LaunchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_launch);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+    }
+
+    public void onClick(View view) {
+        Intent intent = new Intent(LaunchActivity.this, SignInActivity.class);
+        startActivity(intent);
     }
 }
